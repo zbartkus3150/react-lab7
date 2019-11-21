@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
+import Employees from './Data'
 
-function App() {
-  return (
-    <div>
-      Empty App
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <h1>Lab 7</h1>  
+    <Employees/>
+  </div>
+)
 
-export default App;
+export default App
