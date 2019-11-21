@@ -35,10 +35,13 @@ class Form extends React.Component{
                                 type="text"
                             />
                         </p>
-                        <p>Parent Email:
+                        <p>Parent Phone:
                             <input style={{float:"right"}}
-                                id="email"
-                                type="text"
+                                id="phone"
+                                type="tel"
+                                pattern="[0-9]{9}"
+                                title="Phone number should by 9 digits long"
+                                required="required"
                             />
                         </p>
                     </div>
@@ -53,11 +56,15 @@ class Form extends React.Component{
                         <p>Email:
                             <input style={{float:"right"}}
                                 id="email"
-                                type="text"
+                                type="email"
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                title="Enter proper email address"
+                                required="required"
                             />
                         </p>
                     </div>
                     }
+                    <button>Submit</button>
                 </form>
             </div>
         )
