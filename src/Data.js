@@ -1,5 +1,6 @@
 import React from 'react'
 import AllEmployees from './AllEmployees'
+import Form from './Form'
 class Data extends React.Component {
 
 	constructor(props) {
@@ -32,6 +33,7 @@ class Data extends React.Component {
 		return (
             <div>
                 Data loaded: {this.state.employees.length}<br/>
+                <Form/>
                 <AllEmployees employee={this.state.employees}/>
             </div>
 
